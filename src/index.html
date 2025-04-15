@@ -1,17 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel & Tours Landing</title>
+    <!-- Підключення згенерованого CSS (після компіляції SCSS) -->
     <link rel="stylesheet" href="/css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-<link rel="stylesheet" href="/css/styles.css">
 
+<!-- HEADER -->
+<header class="header">
+    <!-- Верхній рядок із контактами/соцмережами -->
+    <div class="header__top-bar">
+        <div class="header__socials">
+            <!-- Іконки соцмереж або інші посилання -->
+            <a href="#" class="header__social-link"> <img src="assets/images/mdi_instagram.png"></a>
+            <a href="#" class="header__social-link"> <img src="assets/images/circum_twitter.png"></a>
+            <a href="#" class="header__social-link"> <img src="assets/images/iconoir_facebook.png"></a>
+        </div>
+        <div class="header__contacts">
+            <span class="header__phone">+1 234 456 678</span>
+            <span class="header__separator">|</span>
+            <span class="header__email">contact@traveltours.com</span>
+        </div>
+    </div>
 
-    @@include('./partials/_header.html')
+    <!-- Навігація -->
+    <nav class="header__nav">
+        <ul class="header__menu">
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Home</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Packages</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Tours</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">About Us</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <!-- Напівпрозорий фон, аби затемнити основне зображення -->
+    <div class="hero__overlay"></div>
+
+    <!-- Контейнер, що тримає весь контент на передньому плані -->
+    <div class="hero__container">
+        <h1 class="hero__title">Your Dream Vacation Awaits</h1>
+        <p class="hero__subtitle">Explore the World with us.</p>
+
+        <!-- Форма пошуку/вибору опцій -->
+        <div class="hero__search">
+            <!-- Перемикачі вкладок (Flights, Hotels, Tours) -->
+            <ul class="hero__search-tabs">
+                <li class="hero__search-tab hero__search-tab--active">Flights</li>
+                <li class="hero__search-tab">Hotels</li>
+                <li class="hero__search-tab">Tours</li>
+            </ul>
+
+            <!-- Основна форма -->
+            <form action="#" class="hero__search-form">
+                <div class="hero__search-field">
+                    <label for="departure">Departure Date</label>
+                    <input type="date" id="departure" name="departure" />
+                </div>
+                <div class="hero__search-field">
+                    <label for="return">Return Date</label>
+                    <input type="date" id="return" name="return" />
+                </div>
+                <div class="hero__search-field">
+                    <label for="travelers">Travelers</label>
+                    <select id="travelers" name="travelers">
+                        <option value="1">1 Traveler</option>
+                        <option value="2">2 Travelers</option>
+                        <option value="3">3 Travelers</option>
+                        <option value="4">4 Travelers</option>
+                    </select>
+                </div>
+                <button type="submit" class="hero__search-button">Search</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Підключення скриптів -->
+<script src="src/js/script.js"></script>
 </body>
 </html>

@@ -1,8 +1,10 @@
 @use "./_variables.scss";
 @use "./_base.scss";
 @use "./_header.scss";
+@use "./hero.scss";
 
-.footer_font{
-  font-family: Work Sans
-  Color Text = #000000;
+.pal {
+  font-weight: bold;
+  font-size: 6px;
+  color: #e21010;
 }

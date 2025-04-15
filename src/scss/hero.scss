@@ -1,0 +1,118 @@
+.hero {
+  position: relative;
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__subtitle {
+    font-family: 'Grape Nuts', cursive;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+
+  &__search {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+
+    &-tabs {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    &-tab {
+      flex: 1;
+      text-align: center;
+      background-color: #eee;
+      padding: 10px 0;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &--active {
+        background-color: #ddd;
+        font-weight: bold;
+      }
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+
+    &-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    &-field {
+      flex: 1 1 calc(33.333% - 20px);
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+      }
+
+      input,
+      select {
+        padding: 8px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+
+    &-button {
+      flex: 0 0 auto;
+      align-self: flex-end;
+      padding: 12px 20px;
+      background-color: #ff7f50;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #ff6330;
+      }
+    }
+  }
+}

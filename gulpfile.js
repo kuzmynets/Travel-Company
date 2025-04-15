@@ -5,6 +5,15 @@ var browserSync = require('browser-sync');
 var uglify = require('gulp-uglify');
 var runSequence = require('run-sequence');
 
+const { src, dest } = require('gulp');
+
+function copyAssets() {
+    return src('src/assets/**/*')
+        .pipe(dest('dist/assets'));
+}
+
+exports.copyAssets = copyAssets;
+
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
