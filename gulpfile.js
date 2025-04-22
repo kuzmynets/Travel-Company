@@ -64,6 +64,3 @@ exports.default = function() {
 
     browserSyncInit();
 };
-
-
-
