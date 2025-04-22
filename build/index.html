@@ -4,20 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel & Tours Landing</title>
-    <!-- Підключення згенерованого CSS (після компіляції SCSS) -->
     <link rel="stylesheet" href="/css/styles.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
 
-<!-- HEADER -->
+<link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
 <header class="header">
-    <!-- Верхній рядок із контактами/соцмережами -->
     <div class="header__top-bar">
         <div class="header__socials">
-            <!-- Іконки соцмереж або інші посилання -->
             <a href="#" class="header__social-link"> <img src="assets/images/mdi_instagram.png"></a>
             <a href="#" class="header__social-link"> <img src="assets/images/circum_twitter.png"></a>
             <a href="#" class="header__social-link"> <img src="assets/images/iconoir_facebook.png"></a>
@@ -41,26 +39,19 @@
     </nav>
 </header>
 
-<!-- HERO SECTION -->
 <section class="hero">
-    <!-- Напівпрозорий фон, аби затемнити основне зображення -->
     <div class="hero__overlay"></div>
-
-    <!-- Контейнер, що тримає весь контент на передньому плані -->
     <div class="hero__container">
         <h1 class="hero__title">Your Dream Vacation Awaits</h1>
         <p class="hero__subtitle">Explore the World with us.</p>
 
-        <!-- Форма пошуку/вибору опцій -->
         <div class="hero__search">
-            <!-- Перемикачі вкладок (Flights, Hotels, Tours) -->
             <ul class="hero__search-tabs">
                 <li class="hero__search-tab hero__search-tab--active">Flights</li>
                 <li class="hero__search-tab">Hotels</li>
                 <li class="hero__search-tab">Tours</li>
             </ul>
 
-            <!-- Основна форма -->
             <form action="#" class="hero__search-form">
                 <div class="hero__search-field">
                     <label for="departure">Departure Date</label>
@@ -85,7 +76,61 @@
     </div>
 </section>
 
-<!-- Підключення скриптів -->
-<script src="src/js/script.js"></script>
+<section class="popular-destinations position-relative text-center">
+    <div class="overlay position-absolute inset-0"></div>
+    <div class="container py-5 position-relative" style="z-index:1;">
+        <h2 class="mb-4">Popular Destinations</h2>
+        <div class="swiper popular-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card border-0">
+                        <img src="assets/images/cards/card_1.jpg" class="card-img-top" alt="Venice">
+                        <div class="card-body">
+                            <h5 class="card-title">Venice</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet…</p>
+                            <span class="price">$199</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card border-0">
+                        <img src="assets/images/cards/card_2.jpg" class="card-img-top" alt="San Paolo">
+                        <div class="card-body">
+                            <h5 class="card-title">San Paolo</h5>
+                            <p class="card-text">Lorem ipsum dolor sit…</p>
+                            <span class="price">$249</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card border-0">
+                        <img src="assets/images/cards/card_3.jpg" class="card-img-top" alt="Barbados">
+                        <div class="card-body">
+                            <h5 class="card-title">Barbados</h5>
+                            <p class="card-text">Lorem ipsum dolor sit…</p>
+                            <span class="price">$299</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card border-0">
+                        <img src="assets/images/cards/card_4.jpg" class="card-img-top" alt="Cyprus">
+                        <div class="card-body">
+                            <h5 class="card-title">Cyprus</h5>
+                            <p class="card-text">Lorem ipsum dolor sit…</p>
+                            <span class="price">$239</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="src/main.js"></script>
 </body>
 </html>
