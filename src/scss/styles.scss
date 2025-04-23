@@ -2,8 +2,7 @@
 @use "./_base.scss";
 @use "./_header.scss";
 @use "./hero.scss";
-
-
+@use "./_video.scss";
 
 .mb-4{
   font-size: 40px;
@@ -23,38 +22,37 @@
   }
 }
 .popular-swiper {
-  padding-bottom: 2rem;
-
+  /* щоб усі слайди вирівнювались по висоті контенту */
   .swiper-wrapper {
     align-items: stretch;
   }
 
+  /* центрувати кожну картку в слайді */
   .swiper-slide {
     display: flex;
-    align-items: center;
     justify-content: center;
-
   }
 
+  /* задати карточці повний контекст flex */
   .card {
-    width: 100%;
-    max-width: 280px;
+    background: white;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    width: 100%;
+    max-width: 280px;   /* підлаштуй під свій дизайн */
+  }
 
-    .card-img-top {
-      border-radius: .5rem .5rem 0 0;
-      object-fit: cover;
-      height: 180px;
-    }
+  /* картинка завжди одного розміру */
+  .card-img-top {
+    object-fit: cover;
+    height: 180px;
+  }
 
-    .card-body {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 1rem;
-    }
+  /* тіло картки розтягується на всю висоту */
+  .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

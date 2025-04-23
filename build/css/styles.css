@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body {
   margin: 0;
@@ -177,6 +178,32 @@ body {
   background-color: #ff6330;
 }
 
+.video-preview__inner {
+  position: relative;
+}
+.video-preview__thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.video-preview__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* якщо хочеш напівпрозорий бекграунд під іконкою */
+  /* background: rgba(0,0,0,0.4);
+     border-radius: 50%;
+  */
+}
+.video-preview__overlay-img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
 .mb-4 {
   font-size: 40px;
   margin-bottom: 4px;
@@ -194,32 +221,33 @@ body {
 }
 
 .popular-swiper {
-  padding-bottom: 2rem;
+  /* щоб усі слайди вирівнювались по висоті контенту */
+  /* центрувати кожну картку в слайді */
+  /* задати карточці повний контекст flex */
+  /* картинка завжди одного розміру */
+  /* тіло картки розтягується на всю висоту */
 }
 .popular-swiper .swiper-wrapper {
   align-items: stretch;
 }
 .popular-swiper .swiper-slide {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .popular-swiper .card {
-  width: 100%;
-  max-width: 280px;
+  background: white;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  width: 100%;
+  max-width: 280px; /* підлаштуй під свій дизайн */
 }
-.popular-swiper .card .card-img-top {
-  border-radius: 0.5rem 0.5rem 0 0;
+.popular-swiper .card-img-top {
   object-fit: cover;
   height: 180px;
 }
-.popular-swiper .card .card-body {
+.popular-swiper .card-body {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
 }

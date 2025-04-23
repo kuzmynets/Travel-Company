@@ -1,6 +1,6 @@
 new Swiper('.popular-swiper', {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 40,
     centeredSlides: true,
     loop: true,
     navigation: {

@@ -1,0 +1,30 @@
+.video-preview {
+  &__inner {
+    position: relative;   // щоб overlay працював
+  }
+
+  &__thumb {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* якщо хочеш напівпрозорий бекграунд під іконкою */
+    /* background: rgba(0,0,0,0.4);
+       border-radius: 50%;
+    */
+  }
+
+  &__overlay-img {
+    display: block;
+    width: 80px;    // регулюй під свій дизайн
+    height: 80px;
+    object-fit: contain;
+    cursor: pointer; // якщо по кліку хочеш щось робити
+  }
+}
