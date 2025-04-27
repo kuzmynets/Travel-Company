@@ -329,6 +329,113 @@ body {
   background-color: #222;
 }
 
+.subscribe-award {
+  position: relative;
+  padding: 6rem 0;
+  color: #222;
+  /* напівпрозорий фон позаду */
+  /* базові стилі для обох блоків */
+  /* ————————————— Newsletter ————————————— */
+  /* ————————————— Award Winning ————————————— */
+  /* зменшений gutter між лівою та правою колонками */
+}
+.subscribe-award__card-img {
+  width: 125px;
+  height: 115px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.subscribe-award .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+.subscribe-award__newsletter {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem !important;
+  max-width: none;
+}
+.subscribe-award__newsletter-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.subscribe-award__newsletter-text {
+  font-size: 1.5rem;
+  color: #555;
+  text-align: center;
+}
+.subscribe-award__newsletter__form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.subscribe-award__newsletter__form .form-control {
+  border-radius: 0;
+  height: 3rem;
+}
+.subscribe-award__newsletter__form .btn-primary {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 0;
+}
+.subscribe-award__award {
+  /* gutter-и між картками */
+}
+.subscribe-award__award-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.subscribe-award__award-text {
+  font-family: "work sans", sans-serif;
+  font-size: 1.5rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.subscribe-award__award > .row {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.subscribe-award__award > .row > .col-6 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.subscribe-award__award__card {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+.subscribe-award__award__card-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 0.75rem;
+}
+.subscribe-award__award__card-title {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+.subscribe-award__award__card-sub {
+  font-size: 0.8rem;
+  color: #777;
+}
+.subscribe-award > .container > .row.align-items-center {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.subscribe-award > .container > .row.align-items-center > .col-lg-6 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .mb-4 {
   font-size: 40px;
   margin-bottom: 4px;
