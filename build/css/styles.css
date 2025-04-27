@@ -436,6 +436,72 @@ body {
   padding-right: 1rem;
 }
 
+.cta {
+  position: relative;
+  padding: 4rem 0;
+  color: #222;
+}
+.cta .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.95);
+}
+.cta__title {
+  font-family: "YourHeadingFont", cursive;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+.cta__text {
+  font-size: 1.5rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+.cta__button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.site-footer {
+  position: relative;
+  padding: 2rem 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+.site-footer .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.site-footer .footer-brand .footer-logo {
+  width: 210px;
+  height: 160px;
+}
+.site-footer .footer-brand .footer-brand__text {
+  margin-left: 0.75rem;
+  font-size: 4rem;
+  font-family: "YourHeadingFont", cursive;
+  color: #fff;
+}
+.site-footer .footer-nav .footer-nav__link {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.site-footer .footer-nav .footer-nav__link:hover {
+  color: #00b3b3;
+}
+.site-footer .footer-copy {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .mb-4 {
   font-size: 40px;
   margin-bottom: 4px;

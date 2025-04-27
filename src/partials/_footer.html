@@ -1,16 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-</body>
-<footer>
-<div>
-  <p>Home</p>
-  <p class="footer_font">About</p>
-  <p>Contact</p>
-     </div>
+<footer class="site-footer position-relative text-center py-4">
+    <div class="overlay position-absolute inset-0"></div>
+    <div class="container position-relative" style="z-index:1;">
+
+        <!-- Бренд: логотип + назва -->
+        <div class="footer-brand d-flex justify-content-center align-items-center mb-3">
+            <img src="assets/images/star.png"
+                 alt="Star Travels"
+                 class="footer-logo">
+            <span class="footer-brand__text">Star Travels</span>
+        </div>
+
+        <!-- Навігація -->
+        <nav class="footer-nav mb-3">
+            <a href="#home"     class="footer-nav__link mx-2">Home</a>
+            <a href="#packages"class="footer-nav__link mx-2">Packages</a>
+            <a href="#tours"   class="footer-nav__link mx-2">Tours</a>
+            <a href="#about"   class="footer-nav__link mx-2">About Us</a>
+            <a href="#contact" class="footer-nav__link mx-2">Contact</a>
+        </nav>
+
+        <!-- Копірайт -->
+        <p class="footer-copy mb-0">
+            &copy; 2023 StarTravels.com | All Rights Reserved.
+        </p>
+    </div>
 </footer>
-</html>

@@ -1,0 +1,42 @@
+.site-footer {
+  position: relative;
+  padding: 2rem 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+
+  .overlay {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(0,0,0,0.6);
+  }
+
+  .footer-brand {
+    .footer-logo {
+      width: 210px;
+      height: 160px;
+    }
+    .footer-brand__text {
+      margin-left: 0.75rem;
+      font-size: 4rem;
+      font-family: 'YourHeadingFont', cursive;
+      color: #fff;
+    }
+  }
+
+  .footer-nav {
+    .footer-nav__link {
+      color: #fff;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: color 0.2s;
+      &:hover {
+        color: #00b3b3;
+      }
+    }
+  }
+
+  .footer-copy {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.8);
+  }
+}
