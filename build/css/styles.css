@@ -223,6 +223,8 @@ body {
   margin-bottom: 3rem;
 }
 .why-us__card {
+  width: 288px;
+  height: 297px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
