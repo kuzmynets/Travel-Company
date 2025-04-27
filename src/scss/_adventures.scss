@@ -3,6 +3,7 @@
   padding: 6rem 0;
   color: #222;
 
+  // gutter між маленькими картками
   > .container > .row > .col-md-6 > .row {
     margin-left: -1rem;
     margin-right: -1rem;
@@ -87,5 +88,60 @@
     height: 100%;
     mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M10 17l5-5-5-5v10z"/></svg>') center/contain no-repeat;
     background-color: #222;
+  }
+
+  // === Responsive adaptations ===
+  @media (max-width: 767.98px) {
+    padding: 4rem 0;
+
+    // зробити весь блок одноколоночним
+    > .container > .row {
+      flex-direction: column;
+    }
+    > .container > .row > .col-md-6 {
+      width: 100%;
+      padding: 0 1rem;     // горизонтальні падінги
+      margin-bottom: 2rem; // відступ між великим і малими
+    }
+
+    // вкладений ряд 2×2 теж в один стовпець
+    > .container > .row > .col-md-6 > .row {
+      margin-left: 0;
+      margin-right: 0;
+      flex-direction: column;
+    }
+    > .container > .row > .col-md-6 > .row > .col-sm-6 {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+
+    // картки на всю ширину
+    &__item {
+      &--large,
+      &--small {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    // інформаційний блок на всю ширину
+    &__info {
+      width: 100%;
+      padding: 1rem;
+    }
+
+    // трохи зменшити шрифти
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    &__title {
+      font-size: 0.95rem;
+    }
+    &__text {
+      font-size: 0.85rem;
+      margin: 0.5rem 1rem 1rem;
+    }
   }
 }

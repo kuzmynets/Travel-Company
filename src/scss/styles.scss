@@ -1,21 +1,15 @@
-@use "./_variables.scss";
-@use "./_base.scss";
-@use "./_header.scss";
-@use "./hero.scss";
-@use "./_video.scss";
-@use "./_why-us.scss";
-@use "./_adventures.scss";
-@use "./_subscribe-award.scss";
-@use "./_cta.scss";
-@use "./_footer.scss";
+@use "./_base";
+@use "./_header";
+@use "./hero";
+@use "./_video";
+@use "./_why-us";
+@use "./_adventures";
+@use "./_subscribe-award";
+@use "./_cta";
+@use "./_footer";
 
-.mb-4{
-  font-size: 40px;
-  margin-bottom: 4px;
-  text-align: center;
-  font-family: 'Grape Nuts', cursive;
-}
-
+// ————————————————————————————————————————————————————————————————————
+// Popular Destinations
 .popular-destinations {
   .container {
     background: rgba(255,255,255,0.8);
@@ -25,39 +19,58 @@
   h2 {
     margin-bottom: 2.5rem;
   }
+
+  // адаптація під планшети і мобільні
+  @media (max-width: 767.98px) {
+    .container {
+      padding: 0 1rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+  }
 }
+
+// ————————————————————————————————————————————————————————————————————
+// Popular Swiper Cards
 .popular-swiper {
-  /* щоб усі слайди вирівнювались по висоті контенту */
   .swiper-wrapper {
     align-items: stretch;
   }
-
-  /* центрувати кожну картку в слайді */
   .swiper-slide {
     display: flex;
     justify-content: center;
   }
-
-  /* задати карточці повний контекст flex */
   .card {
     background: white;
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 280px;   /* підлаштуй під свій дизайн */
+    max-width: 280px;   /* підлаштуйте під дизайн */
   }
-
-  /* картинка завжди одного розміру */
   .card-img-top {
     object-fit: cover;
     height: 180px;
   }
-
-  /* тіло картки розтягується на всю висоту */
   .card-body {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  // адаптація під планшети
+  @media (max-width: 767.98px) {
+    .card {
+      max-width: 240px;
+    }
+  }
+  // адаптація під вузькі смартфони
+  @media (max-width: 575.98px) {
+    .card {
+      max-width: 90%;
+      margin: 0 auto;
+    }
   }
 }

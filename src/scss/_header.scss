@@ -73,4 +73,65 @@
       }
     }
   }
+
+  // =======================================================
+  // Responsive: tablets and below
+  @media (max-width: 991.98px) {
+    &__top-bar {
+      padding: 8px 10px;
+    }
+    &__nav {
+      padding: 8px 10px;
+    }
+    &__menu {
+      gap: 10px;
+    }
+  }
+
+  // Responsive: mobile
+  @media (max-width: 767.98px) {
+    &__top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 8px 10px;
+    }
+    &__contacts,
+    &__socials {
+      width: 100%;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    &__nav {
+      flex-direction: column;
+      padding: 8px 10px;
+    }
+    &__menu {
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      margin-top: 10px;
+    }
+    &__logo {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  // Responsive: very small phones
+  @media (max-width: 575.98px) {
+    &__top-bar {
+      display: none; // ховаємо, якщо треба
+    }
+    &__nav {
+      padding: 8px;
+    }
+    &__logo {
+      font-size: 1.25rem;
+    }
+    &__menu {
+      gap: 8px;
+    }
+  }
 }

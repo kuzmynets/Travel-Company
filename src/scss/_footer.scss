@@ -11,9 +11,15 @@
   }
 
   .footer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
     .footer-logo {
       width: 210px;
       height: 160px;
+      object-fit: contain;
     }
     .footer-brand__text {
       margin-left: 0.75rem;
@@ -24,11 +30,18 @@
   }
 
   .footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
     .footer-nav__link {
       color: #fff;
       font-size: 0.9rem;
       text-decoration: none;
+      margin: 0 1rem;
       transition: color 0.2s;
+
       &:hover {
         color: #00b3b3;
       }
@@ -36,7 +49,53 @@
   }
 
   .footer-copy {
+    text-align: center;
     font-size: 0.8rem;
     color: rgba(255,255,255,0.8);
+  }
+
+  // ————————————————————————————————
+  // Responsive: планшети та мобільні до 768px
+  @media (max-width: 767.98px) {
+    padding: 1.5rem 0;
+
+    .footer-brand {
+      flex-direction: column;
+
+      .footer-logo {
+        width: 150px;
+        height: auto;
+      }
+      .footer-brand__text {
+        font-size: 2rem;
+        margin: 0.5rem 0 1rem;
+      }
+    }
+
+    .footer-nav {
+      flex-direction: column;
+
+      .footer-nav__link {
+        margin: 0.5rem 0;
+      }
+    }
+
+    .footer-copy {
+      font-size: 0.75rem;
+    }
+  }
+
+  // ————————————————————————————————
+  // Додатково для вузьких смартфонів до 576px
+  @media (max-width: 575.98px) {
+    .footer-brand__text {
+      font-size: 1.5rem;
+    }
+    .footer-nav__link {
+      font-size: 0.8rem;
+    }
+    .footer-copy {
+      font-size: 0.7rem;
+    }
   }
 }

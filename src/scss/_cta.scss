@@ -5,9 +5,8 @@
 
   .overlay {
     position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.8);
-    background: rgba(255,255,255, 0.95);
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(255,255,255,0.95);
   }
 
   &__title {
@@ -27,5 +26,35 @@
     padding: 0.75rem 1.5rem;
     border-radius: 0;
     font-weight: bold;
+  }
+
+  // === Responsive for small screens ===
+  @media (max-width: 767.98px) {
+    padding: 2.5rem 1rem;
+
+    &__title {
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    &__text {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__button {
+      width: 100%;
+      padding: 0.75rem;
+    }
+  }
+
+  // ще вужче — під вузькі телефони
+  @media (max-width: 575.98px) {
+    &__title {
+      font-size: 1.5rem;
+    }
+    &__text {
+      font-size: 0.9rem;
+    }
   }
 }
