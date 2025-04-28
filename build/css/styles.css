@@ -586,8 +586,11 @@ body {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     margin-bottom: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .subscribe-award .subscribe-award__award__card {
+    text-align: center;
   }
 }
 @media (max-width: 319.98px) {

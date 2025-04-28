@@ -133,7 +133,7 @@
         > .row {
           display: flex;
           flex-wrap: wrap;
-          justify-content: center;  // центруємо ряд
+          justify-content: center;     // центр рядів
         }
         > .row > .col-6 {
           flex: 0 0 50%;
@@ -141,8 +141,14 @@
           padding-left: 0.5rem;
           padding-right: 0.5rem;
           margin-bottom: 1rem;
-          margin-left: auto;   // додаємо центрування по горизонталі
-          margin-right: auto;
+
+          // Центруємо вміст колонки
+          display: flex;
+          justify-content: center;
+        }
+        // Додатково, щоб картка в колонці по центру
+        &__card {
+          text-align: center;
         }
       }
     }
