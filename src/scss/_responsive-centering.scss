@@ -1,0 +1,58 @@
+// Центрування блоків на мобільних (≤768px)
+@media (max-width: 767.98px) {
+
+  // 1) Хедер: top-bar і навігація
+  .header__top-bar,
+  .header__nav,
+  .navbar-collapse,
+  .navbar-nav {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .header__contacts,
+  .header__socials {
+    justify-content: center !important;
+  }
+
+  // 2) Герой, CTA, Subscribe-Award, Why-Us, Adventures, Popular
+  .hero__container,
+  .cta .container,
+  .subscribe-award .container,
+  .why-us .container,
+  .adventures .container,
+  .popular-destinations .container,
+  .site-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  // 3) Ряди з колонками → стовпці
+  .why-us .row,
+  .adventures > .container > .row,
+  .subscribe-award .row,
+  .popular-destinations .row {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  // 4) Центруємо картки та кнопки
+  .why-us__card,
+  .adventures__item,
+  .subscribe-award__newsletter,
+  .subscribe-award__award,
+  .cta__button,
+  .site-footer .footer-brand,
+  .site-footer .footer-nav {
+    margin: 0 auto !important;
+  }
+
+  // 5) Слайдер: ліві/праві кнопки – по центру
+  .swiper-button-prev,
+  .swiper-button-next {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

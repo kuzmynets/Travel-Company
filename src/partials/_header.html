@@ -1,9 +1,10 @@
 <header class="header">
+    <!-- Top bar -->
     <div class="header__top-bar">
         <div class="header__socials">
-            <a href="#" class="header__social-link"> <img src="assets/images/mdi_instagram.png"></a>
-            <a href="#" class="header__social-link"> <img src="assets/images/circum_twitter.png"></a>
-            <a href="#" class="header__social-link"> <img src="assets/images/iconoir_facebook.png"></a>
+            <a href="#" class="header__social-link"><img src="assets/images/mdi_instagram.png" alt="Instagram"></a>
+            <a href="#" class="header__social-link"><img src="assets/images/circum_twitter.png" alt="Twitter"></a>
+            <a href="#" class="header__social-link"><img src="assets/images/iconoir_facebook.png" alt="Facebook"></a>
         </div>
         <div class="header__contacts">
             <span class="header__phone">+1 234 456 678</span>
@@ -12,14 +13,22 @@
         </div>
     </div>
 
-    <!-- Навігація -->
-    <nav class="header__nav">
-        <ul class="header__menu">
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Home</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Packages</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Tours</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link">About Us</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Contact</a></li>
-        </ul>
+    <!-- Bootstrap navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark header__nav">
+        <a class="navbar-brand header__logo" href="#">Star Travels</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ml-auto header__menu">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Packages</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tours</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
